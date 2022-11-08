@@ -1,0 +1,49 @@
+.ar91container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  background: var(--colorFooter);
+}
+
+.ar91containerImage {
+  width: 100%;
+  height: 100%;
+  background: var(--colorBg);
+}
+
+.ar91containerImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.ar91containerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1rem 1.5rem;
+  height: 100%;
+}
+
+.ar91containerContent a {
+  color: var(--colorWhite);
+}
+
+.ar91containerContent h3 {
+  font-size: 25.11px;
+  font-weight: 800;
+  line-height: 30.3px;
+
+  color: var(--colorWhite);
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .ar91containerContent h3 {
+    font-size: 18px;
+    line-height: 25p;
+  }
+}

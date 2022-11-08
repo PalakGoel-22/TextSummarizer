@@ -1,0 +1,151 @@
+.nv11navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem 6rem;
+}
+
+.nv11navbarLinks {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nv11navbarLinksLogo img {
+  margin: 0.5rem 2rem 0 0;
+}
+
+.nv11navbarLinksContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.nv11navbarLinksSign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nv11navbarLinksContainer p,
+.nv11navbarLinksSign p,
+.nv11navbarMenuContainer p {
+  color: var(--colorWhite);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.nv11navbarLinksSign button,
+.nv11navbarMenuContainer button {
+  padding: 0.5rem 1rem;
+  color: var(--colorWhite);
+  background: var(--colorRed);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nv11navbarMenu {
+  margin-left: 1rem;
+
+  display: none;
+  position: relative;
+}
+
+.nv11navbarMenu svg {
+  cursor: pointer;
+}
+
+.nv11navbarMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: end;
+  background: var(--colorFooter);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nv11navbarMenuContainer p {
+  margin: 1rem 0;
+}
+
+.nv11navbarMenuSigns {
+  display: none;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media screen and (max-width: 1050px) {
+  .nv11navbarLinksContainer {
+    display: none;
+  }
+
+  .nv11navbarMenu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nv11navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nv11navbar {
+    padding: 2rem;
+  }
+
+  .nv11navbarLinksSign {
+    display: none;
+  }
+
+  .nv11navbarMenuContainer {
+    top: 20px;
+  }
+
+  .nv11navbarMenuSigns {
+    display: block;
+  }
+}

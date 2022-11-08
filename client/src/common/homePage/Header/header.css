@@ -1,0 +1,129 @@
+.h19Header {
+  display: flex;
+  flex-direction: row;
+}
+
+.h19HeaderContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 5rem;
+}
+
+.h19HeaderContent h1 {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.h19HeaderContent p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--colorText);
+
+  margin-top: 1.5rem;
+}
+
+.h19HeaderContentInput {
+  width: 100%;
+  margin: 2rem 0 1rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.h19HeaderContentInput input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: var(--colorFooter);
+  border: 2px solid var(--colorFooter);
+  padding: 0 1rem;
+  outline: none;
+  color: var(--colorWhite);
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.h19HeaderContentInput button {
+  flex: 0.2;
+  width: 100%;
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: var(--colorRed);
+  border: 2px solid var(--colorRed);
+  padding: 0 1rem;
+  color: var(--colorWhite);
+  cursor: pointer;
+  outline: none;
+
+  border-radius: 5px;
+}
+
+.h19HeaderImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h19HeaderImage img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .h19Header {
+    flex-direction: column;
+  }
+
+  .h19HeaderContent {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .h19HeaderContent h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .h19HeaderContent p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .h19HeaderContentInput input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .h19HeaderContent h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .h19HeaderContent p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .h19HeaderContentInput input,
+  .h19HeaderContentInput button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
